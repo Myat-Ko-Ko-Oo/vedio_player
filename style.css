@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width:900px;
+    width: 98%;
+    margin: 0 auto;
+    position: relative;
+}
+.container.fullscreen{
+    max-width:100%;
+    width: 100%;
+
+}
+.container video{
+width: 100%;
+
+}
+.centre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 80px;
+    color: white;
+    z-index: 1000;
+    
+
+    
+}
+.right .speed_option.show{
+display: block;
+}
+.speed_option{
+    list-style: none;
+  display: none;
+    background-color: white;
+    position: absolute;
+    bottom:30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    user-select: none;
+}
+.speed_option li {
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+}
+.speed_option  .active {
+    background-color: purple;
+    
+}
+
+.vedio_control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.vedio_control .centre{
+    margin-right: 30px;
+}
+
+.right button{
+    margin: 3px;
+
+
+}
+
+.right{
+
+color: blue;
+z-index: 1000;
+
+
+}
+.left{
+   
+    color: blue;
+    z-index: 1000;
+
+    
+}
+.volume{
+    background-color: inherit;
+    color: white;
+    border: inherit;
+}
+.vedio_control p{
+    display: inline-block;
+    color: white;
+}
+.container video{
+position: relative;
+}
+.progress-bar{
+    width: 100%;
+    height: 4px;
+    border-radius: 100px;
+    position: relative;
+    background-color:white;
+    cursor: pointer;
+    user-select: none;
+}
+.progress-bar span{
+    background-color: red;
+ display: block;
+ width: 0%;
+ height: 100%;
+
+}
+.progress-bar:hover span  span{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:blue;
+    left: 0;
+    bottom: 0px;
+      margin-top: 20px;
+    display: block;
+    
+}
+.progress_area{
+    position: absolute;
+    bottom: 20px;
+    z-index: 1000;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.vedio_header.hide{
+    display: none;
+}
+
+.vedio_control.hide{
+    display: none;
+}
