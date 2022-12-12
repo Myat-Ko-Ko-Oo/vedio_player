@@ -37,7 +37,16 @@ document.querySelector(".container").addEventListener("mousemove",()=>{
   hidecontrol()
 })
 
+play_pause.click();
 
+play_pause.click();
+
+play_pause.click();
+
+play_pause.click();
+
+play_pause.click();
+play_pause.click();
 
 play_pause.addEventListener("click", () => {
   vedio.paused ? vedio.play() : vedio.pause();
